@@ -1,0 +1,13 @@
+{
+	"amount":1,
+	"index":3,
+	"connlimit":17500,
+	"waitperiodms":2000,
+	"gameVersion":"1.1.0.2.1",
+	"threaddelay":1000,
+	"FPS":1,
+	"recondelay":1,
+	"savedelay":180,
+	"receiveitem":1,
+	"usenotifier":false
+}
