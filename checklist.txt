@@ -1,0 +1,7 @@
+Updating the bots checklist:
+1. Update game version
+2. Update packet ids
+3. Update packet structs
+4. Update nexus spawn tile
+5. Update statdata for new stats
+
