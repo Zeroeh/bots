@@ -211,17 +211,17 @@ func (c *Client) IsDupeSuccess() bool {
 
 //Dupe IS TOP SECRET!!!!!!!!! COVER YOUR EYES!
 func (c *Client) Dupe() {
-	var isAdd = false
-	e := EditAccountList{}
-	e.AccountListID = 0
-	e.ObjectID = c.ObjectID
+	var isRank = false
+	e := ChangeGuildRank{}
+	e.name = "0"
+	e.guildRank = 0
 	for i := 0; i < dupeSpamCount; i++ {
-		if isAdd == true {
-			e.Add = true
-			isAdd = false
+		if isRank == true {
+			e.guildRank = 0
+			isRank = false
 		} else {
-			e.Add = false
-			isAdd = true
+			e.guildRank = 1
+			isRank = true
 		}
 		c.Connection.Send(WritePacket(e))
 	}
